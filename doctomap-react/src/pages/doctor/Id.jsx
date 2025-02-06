@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 
 function Id() {
   const params = useParams();
@@ -40,6 +40,12 @@ function Id() {
                   >
                     {doctor.phone}
                   </a>
+                  <Link
+                    to={`/update/${doctor.id}`}
+                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+                  >
+                    update
+                  </Link>
                 </div>
               </div>
             </div>
