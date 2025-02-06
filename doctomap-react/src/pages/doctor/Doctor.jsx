@@ -11,8 +11,6 @@ function Doctor() {
   const getDoctors = async () => {
     const response = await fetch("https://127.0.0.1:8000/api/doctors");
     const data = await response.json();
-    console.log("data");
-    console.log(data.member);
     setDoctors(data.member);
   };
 
