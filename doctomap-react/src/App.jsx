@@ -6,6 +6,7 @@ import Nav from "./pages/components/nav/nav";
 import Dashboard from "./pages/admin/Dashboard";
 import AdminDoctor from "./pages/admin/adminDoctor";
 import Form from "./pages/form/Form";
+import UpdateForm from "./pages/form/UpdateForm";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/dashboard/" element={<Dashboard />} />
         <Route path="/dashboard/users" element={<AdminDoctor />} />
         <Route path="/formulaire" element={<Form />} />
+        <Route path="/update/:id" element={<UpdateForm />} />
       </Routes>
     </BrowserRouter>
   );
